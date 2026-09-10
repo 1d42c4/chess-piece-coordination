@@ -1,0 +1,71 @@
+[Event "Give Every Piece a Job / 04.1A"]
+[Site "Original teaching position"]
+[Date "2026.09.10"]
+[Round "04.1"]
+[White "White"]
+[Black "Black"]
+[Result "*"]
+[FEN "5rk1/pp3ppp/3p1n2/8/3P4/5N1P/PP3PP1/R5K1 w - - 0 1"]
+[SetUp "1"]
+
+{ A rook belongs on a useful file, not automatically on whichever file is empty. Look for a target, an entry square, and a safe route to that square. } 1. Rc1 Re8 2. Rc7 { Illustrative line. Rc1 places the rook on the open c-file. If Black continues ...Re8, White can invade with Rc7 and attack along the seventh rank. The sequence illustrates a route; ...Re8 is not forced, and Black could instead contest the c-file. Before invading, inspect the destination. A rook that reaches the seventh rank but can be captured has accomplished nothing. Here c7 is safe, and the rook can attack pawns from the side. That concrete target explains the file choice. } *
+
+[Event "Give Every Piece a Job / 04.1B"]
+[Site "Original teaching position"]
+[Date "2026.09.10"]
+[Round "04.1"]
+[White "White"]
+[Black "Black"]
+[Result "*"]
+[FEN "5rk1/pp3ppp/2pp1n2/8/3P4/5N1P/PP3PP1/R5K1 w - - 0 1"]
+[SetUp "1"]
+
+{ Exercise. Try the questions in the book before reading this line. } 1. Rc1 Re8 { Illustrative line. The c-file is now semi-open for White: White has no pawn on it, but Black has the c6-pawn. The pawn blocks the rook's route toward the seventh rank. No. A rook cannot jump over c6 to reach c7. Rxc6 is a different move, and the black b7-pawn can recapture on c6, so the pawn is not free. The rook can pressure c6 and make Black account for that target. White would need additional pressure or a structural change before winning it. Rc1 is a planning candidate, not a claim that this material-down position is equal. } *
+
+[Event "Give Every Piece a Job / 04.2A"]
+[Site "Original teaching position"]
+[Date "2026.09.10"]
+[Round "04.2"]
+[White "White"]
+[Black "Black"]
+[Result "*"]
+[FEN "5rk1/pp1n2pp/8/3p1p2/3P4/5N2/PPP2PPP/R5K1 w - - 0 1"]
+[SetUp "1"]
+
+{ A stable knight square is supported and difficult for enemy pawns to attack. Check pawn direction and future pawn moves before calling a square an outpost. } 1. Ne5 Nf6 2. Rc1 { Illustrative line. Ne5 places the knight on a supported central square. Black's d5-pawn attacks c4 and e4; the f5-pawn attacks e4 and g4. Neither can move backward to challenge e5 with a pawn. After the illustrative ...Nf6, Rc1 improves the remaining piece. Black also has ...Nxe5 from d7, when dxe5 recaptures. That exchange changes the pawn structure. A good square improves your choices; it does not prevent your opponent from exchanging pieces. } *
+
+[Event "Give Every Piece a Job / 04.2B"]
+[Site "Original teaching position"]
+[Date "2026.09.10"]
+[Round "04.2"]
+[White "White"]
+[Black "Black"]
+[Result "*"]
+[FEN "5rk1/pp1n1ppp/8/3p4/3P4/5N2/PPP2PPP/R5K1 w - - 0 1"]
+[SetUp "1"]
+
+{ Exercise. Try the questions in the book before reading this line. } 1. Ne5 f6 2. Nf3 { Illustrative line. The f-pawn is still on f7, so ...f6 is available. A black pawn on f6 attacks e5. This future possibility changes the square's stability. Ne5 f6 Nf3 shows the knight being driven away. The route back is legal, but White has spent time going to a square that Black can challenge. This is a comparison line, not a recommendation to repeat the maneuver. No. A temporary knight move can gain time or provoke a weakening pawn move in a richer position. Here the exercise asks whether e5 is a permanent pawn-proof outpost; it is not. Check the whole position before choosing the move. } *
+
+[Event "Give Every Piece a Job / 04.3A"]
+[Site "Original teaching position"]
+[Date "2026.09.10"]
+[Round "04.3"]
+[White "White"]
+[Black "Black"]
+[Result "*"]
+[FEN "6k1/pp2nppp/4p3/3pP3/3P4/8/PP1B1PPP/6K1 w - - 0 1"]
+[SetUp "1"]
+
+{ Improve a restricted bishop by finding a real route outside its pawn chain. A useful destination is only useful if the bishop can legally reach it. } 1. Bb4 Nc6 2. Bd6 { Illustrative line. Bb4 takes the bishop outside the pawn chain. After the sample ...Nc6, Bd6 completes the route. This improves the bishop's scope without needing to move the central pawns first. Black is allowed to react differently, so the route is a plan rather than a forced sequence. Test each step for captures and tactical threats. The purpose of a maneuver is to increase useful control, not merely to move a piece several times. } *
+
+[Event "Give Every Piece a Job / 04.3B"]
+[Site "Original teaching position"]
+[Date "2026.09.10"]
+[Round "04.3"]
+[White "White"]
+[Black "Black"]
+[Result "*"]
+[FEN "6k1/pp2nppp/4p3/3pP3/3P4/2P5/PP1B1PPP/6K1 w - - 0 1"]
+[SetUp "1"]
+
+{ Exercise. Try the questions in the book before reading this line. } 1. Bf4 Nc6 { Illustrative line. White has added a pawn on c3. It stands directly on the bishop's route d2-c3-b4. No. The bishop cannot jump over its own pawn. The presence of an attractive square on b4 does not create a legal route to it. Bf4 is legal through e3. It places the bishop outside d2 and controls squares such as g5, although its own e5-pawn still blocks the diagonal toward d6. It is a modest improvement, not a claim that the bishop is suddenly unrestricted. } *

@@ -1,0 +1,308 @@
+{
+  "number": 4,
+  "slug": "chess-piece-coordination",
+  "title": "Give Every Piece a Job",
+  "goal": "Choose destinations that serve a target, a stable square, or an open line.",
+  "lessons": [
+    {
+      "id": "04.1",
+      "title": "Put a rook on a file with an entry square",
+      "idea": "A rook belongs on a useful file, not automatically on whichever file is empty. Look for a target, an entry square, and a safe route to that square.",
+      "facts": [
+        "The c-file contains no pawn of either color.",
+        "The seventh rank contains targets on a7 and b7.",
+        "The c7 entry square is not protected by a black pawn, knight or king."
+      ],
+      "explain": [
+        "Rc1 places the rook on the open c-file. If Black continues ...Re8, White can invade with Rc7 and attack along the seventh rank. The sequence illustrates a route; ...Re8 is not forced, and Black could instead contest the c-file.",
+        "Before invading, inspect the destination. A rook that reaches the seventh rank but can be captured has accomplished nothing. Here c7 is safe, and the rook can attack pawns from the side. That concrete target explains the file choice."
+      ],
+      "caution": "An open file is not a permanent entitlement. The opponent can challenge it with a rook, protect the entry square, or create a more urgent threat elsewhere.",
+      "questions": [
+        "How does the pawn on c6 change the file?",
+        "After Rc1 ...Re8, can White simply play Rc7?",
+        "What useful job can the rook still do on c1?"
+      ],
+      "answers": [
+        "The c-file is now semi-open for White: White has no pawn on it, but Black has the c6-pawn. The pawn blocks the rook's route toward the seventh rank.",
+        "No. A rook cannot jump over c6 to reach c7. Rxc6 is a different move, and the black b7-pawn can recapture on c6, so the pawn is not free.",
+        "The rook can pressure c6 and make Black account for that target. White would need additional pressure or a structural change before winning it. Rc1 is a planning candidate, not a claim that this material-down position is equal."
+      ],
+      "transfer": "For each rook in one of your games, name a file, an entry square, and the piece that controls the entry. If you cannot name the entry, look for a target first.",
+      "recall": [
+        "What turns an open file into a useful route?",
+        "A safe entry square and a concrete target, together with time to reach them."
+      ],
+      "positions": {
+        "A": {
+          "fen": "5rk1/pp3ppp/3p1n2/8/3P4/5N1P/PP3PP1/R5K1 w - - 0 1",
+          "opening_moves": "",
+          "line": "Rc1 Re8 Rc7",
+          "alternative": "",
+          "purpose": "candidate",
+          "validation": {
+            "id": "04.1A",
+            "title": "Put a rook on a file with an entry square",
+            "fen": "5rk1/pp3ppp/3p1n2/8/3P4/5N1P/PP3PP1/R5K1 w - - 0 1",
+            "line": "Rc1 Re8 Rc7",
+            "bad": "",
+            "checkmate": false,
+            "stalemate": false,
+            "candidates": [
+              {
+                "san": "Re1",
+                "score": "-4",
+                "depth": 18
+              },
+              {
+                "san": "Rc1",
+                "score": "-7",
+                "depth": 18
+              },
+              {
+                "san": "Nh4",
+                "score": "-8",
+                "depth": 18
+              }
+            ],
+            "chosen_score": "-7"
+          }
+        },
+        "B": {
+          "fen": "5rk1/pp3ppp/2pp1n2/8/3P4/5N1P/PP3PP1/R5K1 w - - 0 1",
+          "opening_moves": "",
+          "line": "Rc1 Re8",
+          "alternative": "",
+          "purpose": "candidate",
+          "validation": {
+            "id": "04.1B",
+            "title": "Put a rook on a file with an entry square",
+            "fen": "5rk1/pp3ppp/2pp1n2/8/3P4/5N1P/PP3PP1/R5K1 w - - 0 1",
+            "line": "Rc1 Re8",
+            "bad": "",
+            "checkmate": false,
+            "stalemate": false,
+            "candidates": [
+              {
+                "san": "a4",
+                "score": "-232",
+                "depth": 18
+              },
+              {
+                "san": "Nd2",
+                "score": "-253",
+                "depth": 18
+              },
+              {
+                "san": "Rc1",
+                "score": "-253",
+                "depth": 18
+              }
+            ],
+            "chosen_score": "-272"
+          }
+        }
+      }
+    },
+    {
+      "id": "04.2",
+      "title": "Check whether the outpost can be chased",
+      "idea": "A stable knight square is supported and difficult for enemy pawns to attack. Check pawn direction and future pawn moves before calling a square an outpost.",
+      "facts": [
+        "White's d4-pawn protects e5.",
+        "Black's pawns on d5 and f5 have already passed the squares from which they could attack e5.",
+        "Black can still contest the knight with a piece; pawn immunity does not mean complete immunity."
+      ],
+      "explain": [
+        "Ne5 places the knight on a supported central square. Black's d5-pawn attacks c4 and e4; the f5-pawn attacks e4 and g4. Neither can move backward to challenge e5 with a pawn.",
+        "After the illustrative ...Nf6, Rc1 improves the remaining piece. Black also has ...Nxe5 from d7, when dxe5 recaptures. That exchange changes the pawn structure. A good square improves your choices; it does not prevent your opponent from exchanging pieces."
+      ],
+      "caution": "Do not define an outpost by a knight's attractive appearance alone. Check whether an adjacent enemy pawn can advance to a square that attacks it, and whether exchanging the knight helps you.",
+      "questions": [
+        "What future pawn move can Black use against a knight on e5?",
+        "Test Ne5 and give a retreat after that challenge.",
+        "Does this mean Ne5 is illegal or always a blunder?"
+      ],
+      "answers": [
+        "The f-pawn is still on f7, so ...f6 is available. A black pawn on f6 attacks e5. This future possibility changes the square's stability.",
+        "Ne5 f6 Nf3 shows the knight being driven away. The route back is legal, but White has spent time going to a square that Black can challenge. This is a comparison line, not a recommendation to repeat the maneuver.",
+        "No. A temporary knight move can gain time or provoke a weakening pawn move in a richer position. Here the exercise asks whether e5 is a permanent pawn-proof outpost; it is not. Check the whole position before choosing the move."
+      ],
+      "transfer": "Find a candidate outpost in a game. Draw the enemy pawns' possible future attacks, then identify which friendly pawn or piece would recapture an exchange there.",
+      "recall": [
+        "Why is e5 more stable against pawns on d5 and f5 than against a pawn on f7?",
+        "The advanced pawns cannot move backward to attack e5; the f7-pawn can advance to f6 and attack it."
+      ],
+      "positions": {
+        "A": {
+          "fen": "5rk1/pp1n2pp/8/3p1p2/3P4/5N2/PPP2PPP/R5K1 w - - 0 1",
+          "opening_moves": "",
+          "line": "Ne5 Nf6 Rc1",
+          "alternative": "",
+          "purpose": "candidate",
+          "validation": {
+            "id": "04.2A",
+            "title": "Check whether the outpost can be chased",
+            "fen": "5rk1/pp1n2pp/8/3p1p2/3P4/5N2/PPP2PPP/R5K1 w - - 0 1",
+            "line": "Ne5 Nf6 Rc1",
+            "bad": "",
+            "checkmate": false,
+            "stalemate": false,
+            "candidates": [
+              {
+                "san": "Re1",
+                "score": "+330",
+                "depth": 18
+              },
+              {
+                "san": "Kf1",
+                "score": "+307",
+                "depth": 18
+              },
+              {
+                "san": "h3",
+                "score": "+268",
+                "depth": 18
+              }
+            ],
+            "chosen_score": "+145"
+          }
+        },
+        "B": {
+          "fen": "5rk1/pp1n1ppp/8/3p4/3P4/5N2/PPP2PPP/R5K1 w - - 0 1",
+          "opening_moves": "",
+          "line": "Ne5 f6 Nf3",
+          "alternative": "",
+          "purpose": "contrast",
+          "validation": {
+            "id": "04.2B",
+            "title": "Check whether the outpost can be chased",
+            "fen": "5rk1/pp1n1ppp/8/3p4/3P4/5N2/PPP2PPP/R5K1 w - - 0 1",
+            "line": "Ne5 f6 Nf3",
+            "bad": "",
+            "checkmate": false,
+            "stalemate": false,
+            "candidates": [
+              {
+                "san": "Kf1",
+                "score": "+242",
+                "depth": 18
+              },
+              {
+                "san": "Ne1",
+                "score": "+233",
+                "depth": 18
+              },
+              {
+                "san": "c3",
+                "score": "+228",
+                "depth": 18
+              }
+            ],
+            "chosen_score": "+125"
+          }
+        }
+      }
+    },
+    {
+      "id": "04.3",
+      "title": "Find a real route for the bishop",
+      "idea": "Improve a restricted bishop by finding a real route outside its pawn chain. A useful destination is only useful if the bishop can legally reach it.",
+      "facts": [
+        "White's pawns on d4 and e5 occupy dark squares and limit the dark-squared bishop's central diagonals.",
+        "From d2, the diagonal through c3 and b4 is clear.",
+        "A bishop on d6 would attack e7 and c7 and help control Black's position."
+      ],
+      "explain": [
+        "Bb4 takes the bishop outside the pawn chain. After the sample ...Nc6, Bd6 completes the route. This improves the bishop's scope without needing to move the central pawns first.",
+        "Black is allowed to react differently, so the route is a plan rather than a forced sequence. Test each step for captures and tactical threats. The purpose of a maneuver is to increase useful control, not merely to move a piece several times."
+      ],
+      "caution": "A bishop blocked by its own pawns is not worthless. It may defend those pawns. Improve it only when leaving its defensive job does not lose something more important.",
+      "questions": [
+        "Which square on the Model A route is now occupied?",
+        "Is Bb4 legal from d2 in this position?",
+        "Suggest another development square and describe its current limitation."
+      ],
+      "answers": [
+        "White has added a pawn on c3. It stands directly on the bishop's route d2-c3-b4.",
+        "No. The bishop cannot jump over its own pawn. The presence of an attractive square on b4 does not create a legal route to it.",
+        "Bf4 is legal through e3. It places the bishop outside d2 and controls squares such as g5, although its own e5-pawn still blocks the diagonal toward d6. It is a modest improvement, not a claim that the bishop is suddenly unrestricted."
+      ],
+      "transfer": "Choose your least active bishop from a recent game. Write one destination and every intervening square. Then identify the defensive job you would leave behind.",
+      "recall": [
+        "What should you check before starting a bishop maneuver?",
+        "The complete route, safety at each stop, the destination's useful targets, and any defense the bishop would abandon."
+      ],
+      "positions": {
+        "A": {
+          "fen": "6k1/pp2nppp/4p3/3pP3/3P4/8/PP1B1PPP/6K1 w - - 0 1",
+          "opening_moves": "",
+          "line": "Bb4 Nc6 Bd6",
+          "alternative": "",
+          "purpose": "candidate",
+          "validation": {
+            "id": "04.3A",
+            "title": "Find a real route for the bishop",
+            "fen": "6k1/pp2nppp/4p3/3pP3/3P4/8/PP1B1PPP/6K1 w - - 0 1",
+            "line": "Bb4 Nc6 Bd6",
+            "bad": "",
+            "checkmate": false,
+            "stalemate": false,
+            "candidates": [
+              {
+                "san": "g4",
+                "score": "+16",
+                "depth": 18
+              },
+              {
+                "san": "f3",
+                "score": "0",
+                "depth": 18
+              },
+              {
+                "san": "Bc3",
+                "score": "0",
+                "depth": 18
+              }
+            ],
+            "chosen_score": "-1"
+          }
+        },
+        "B": {
+          "fen": "6k1/pp2nppp/4p3/3pP3/3P4/2P5/PP1B1PPP/6K1 w - - 0 1",
+          "opening_moves": "",
+          "line": "Bf4 Nc6",
+          "alternative": "",
+          "purpose": "candidate",
+          "validation": {
+            "id": "04.3B",
+            "title": "Find a real route for the bishop",
+            "fen": "6k1/pp2nppp/4p3/3pP3/3P4/2P5/PP1B1PPP/6K1 w - - 0 1",
+            "line": "Bf4 Nc6",
+            "bad": "",
+            "checkmate": false,
+            "stalemate": false,
+            "candidates": [
+              {
+                "san": "Bc1",
+                "score": "+147",
+                "depth": 18
+              },
+              {
+                "san": "b3",
+                "score": "+146",
+                "depth": 18
+              },
+              {
+                "san": "Kf1",
+                "score": "+146",
+                "depth": 18
+              }
+            ],
+            "chosen_score": "+150"
+          }
+        }
+      }
+    }
+  ]
+}
